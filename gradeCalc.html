@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    
+
+
     <div class="wrapper">
       <h1>الحاسبة 🔢</h1>
 
       <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
-
+    
       <input id="Quizes" type="text" />
       <input id="Midterm" type="text" />
       <input id="FinalTest" type="text" />
@@ -21,8 +24,7 @@
         id="submitButton"
         type="button"
         value="calculate"
-        onClick="submit()"
-      />
+        onClick="submit()" />
 
       <p>مجموع درجاتك (بالأرقام) هو</p>
       <div id="total_grades"></div>
@@ -30,5 +32,34 @@
       <p>درجتك النهائية هي (بالأحرف)</p>
       <div id="final_grade"></div>
     </div>
+
+    <script> 
+    let totle = 90;
+let daraja =[ 'Quizes'  ,  'Midterm' , 'FinalTest ' , 'Oral' ]  
+      function getLetterGrade(x) {
+        var Q = document.getElementById("Quizes").value; 
+        var M = document.getElementById("Midterm").value;   
+        var F = document.getElementById("FinalTest").value;   
+        var O = document.getElementById("Oral").value; 
+console.log( totle = Q + M + F + O )
+        if (totle >= 90 ) {
+          document.getElementById("Quizes").innerHTML = "A"; 
+         } 
+          else  if (totle >=80 )  {
+          document.getElementById("Quizes").innerHTML = "B"; 
+         }
+        else if (totle >=70 ) {
+          document.getElementById("Quizes").innerHTML = "C";
+         } 
+          else if (totle>60 && totle<60 )  {
+          document.getElementById("Quizes").innerHTML = "D";
+         }  else { 
+          document.getElementById("Quizes").innerHTML = "F";
+         }  }
+         getLetterGrade( daraja[0])
+         getLetterGrade( daraja[1])
+         getLetterGrade( daraja[2])
+         getLetterGrade( daraja[3])
+    </script>
   </body>
 </html>
