@@ -1,1 +1,10 @@
 /* 🎓 تحت هذا التعليق أتحفونا بتصاميمكم التي تليق بقدر حاسبة الدرجات */
+body {
+    background-image: url('https://i.pinimg.com/564x/22/f1/46/22f1468794eaf8eda6373d77c504f652.jpg');
+    background-repeat: no-repeat;
+  }
+  .wrapper { color: blanchedalmond;
+      background-color: black;
+  }
+  
+
